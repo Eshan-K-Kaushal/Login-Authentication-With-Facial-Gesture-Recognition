@@ -1,0 +1,128 @@
+{% load static %}
+<!doctype html>
+
+<html>
+
+<head>
+		<meta charset="UTF-8">
+		<title>Welcome to Arcadius</title>
+	</head>
+<style>
+h1 {
+background-color: transparent;
+font-size: 150px;
+font-family: Agency FB
+
+}
+
+
+<!--h2{
+border-color: black;
+border-width: 30px;
+border-style: soft;
+background-color: yellow;
+font-size: 30px;
+font-family: Agency FB
+line-height: 2.5em;
+margin-left: 800px;
+margin-right: 800px;
+margin-top : 300px;
+}
+
+h3{
+border-color: black
+border-width: 20px;
+border-style: soft;
+background-color: yellow;
+font-size: 30px;
+font-family: Agency FB
+line-height: 7.5em;
+margin-left: 800px;
+margin-right: 800px;
+
+}-->
+body{
+background-image:url('images1/arcadius.jpg');
+background-size: cover;
+background-attachment: fixed;
+}
+
+<!--.c1{
+margin-top: 300px;
+background: transparent;
+width: 5%;
+padding: 10px 20px 10px 60px;
+margin: 100px auto;
+font-family: Agency FB;
+font-size: 70px;
+font-style: italic;
+font-weight: 700;
+}
+
+.c2{
+background: transparent;
+width: 5%;
+padding: 10px 20px 10px 20px;
+margin: 100px auto;
+font-family: Agency FB;
+font-size: 70px;
+font-style: italic;
+font-weight: 700;
+}-->
+
+<!--.blue {
+border: 5px solid black;
+background-color: transparent;
+color: black
+font-size: 20px;
+font-family: Agency FB
+margin-left: 450px;
+margin-right: 450px;
+}-->
+
+
+p {
+color: black;
+font-size: 30px
+font-family: Verdana
+
+}
+</style>
+
+</head>
+
+<body>
+
+<!--<img class = "imagec" src="arcadius.jpg">-->
+<h1 style="text-align:center; color:black"> WELCOME </h1>
+<h1 style="text-align:center; color:black">  TO </h1>
+<h1 style="text-align:center; color:black"> ARCADIUS</h1>
+
+
+<!--<h2 style="text-align:center; color:blue">Login<h2>
+<h3 style="text-align:center; color:blue">Create New Account<h3>
+-->
+<!--<blockquote class="blue">
+Login
+</blockquote>
+-->
+<!--<div class="c1">
+<p>Login</p>
+
+</div>
+
+<div class="c2">
+<p>Create New Account</p>
+</div>
+-->
+<a href="{% url 'login' %}">
+<button style="color:black; border-radius:40px; height: 50px; width: 100px; font-size: 20px; font-style: italic; font-weight: 700; border-color: blue; background-color: yellow; margin-left: 500px;">Login</button>
+</a>
+
+<a href="{% url 'new_account' %}">
+<button style="color:black; border-radius:40px; height: 50px; width: 300px; font-size: 20px; font-style: italic; font-weight: 700; border-color: blue; background-color: yellow; margin-left: 400px; margin-top: 100px;">Create a New Account</button>
+</a>
+
+</body>
+
+</html>

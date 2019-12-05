@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>New Account Creation</title>
+</head>
+
+<style>
+body{
+background-image:url('arcadius2.jpg');
+background-size: cover;
+background-attachment: fixed;
+}
+</style>
+
+<script>
+    function validateForm() {
+      var x = document.forms["myForm"]["username"].value;
+      console.log("Name");
+      console.log(x);
+    
+      if (x != "{{name}}" ) {
+        alert("User not same");
+        return false;
+      }
+    
+      return true;
+    
+    }
+    </script>
+
+
+<body>
+
+
+<!--<a href="file:///C:/Users/Admin/Desktop/Eddie/Program%20stuff/Web%20Tech/HTML/loginconc.html">-->
+<button style="color:black; border-radius:30px; height: 50px; width: 90px; font-size: 20px; font-style: italic; font-weight: 700; border-color: transparent; background-color: transparent; margin-left: 500px;"><a href="{% url 'verify'%}">Verify Yourself</a> </button>
+
+
+ <form name="myForm" action="{% url 'submit_form' %}" method="POST" onsubmit="return validateForm()">
+
+  {% csrf_token %}
+  <table>
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Password :</td>
+    <td><input type="password" name="password" required></td>
+   </tr>
+   <tr>
+    <!--<td>Gender :</td>
+    <td>
+     <input type="radio" name="gender" value="m" required>Male
+     <input type="radio" name="gender" value="f" required>Female
+    </td>
+   </tr>-->
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Phone no :</td>
+    <td>
+     <select name="phoneCode" required>
+      <option selected hidden value="">Select Code</option>
+      <option value="+01">01</option>
+      <option value="+91">91</option>
+      <option value="+45">45</option>
+      <option value="+35">35</option>
+      <option value="+33">33</option>
+      <option value="+89">89</option>
+     </select>
+     <input type="phone" name="phone" required>
+    </td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Submit" {% if data == "false"%}disabled="disabled"{% endif %}></td>
+   </tr>
+  </table>
+ </form>
+</body>
+</html>

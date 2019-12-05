@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>New Account Creation</title>
+</head>
+
+<style>
+body{
+background-image:url(arcadius2.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+</style>
+<body>
+ <form action="insert.php" method="POST">
+  <table>
+   <tr>
+    <td style="text-align:center; color:black; font-family: Agency FB; font-style: italics; font-weight: 700px; font-size: 30px; margin-top: 200px;";>Name :</td>
+    <td><input type="text"></td>
+   </tr>
+   <tr>
+    <td style="text-align:center; color:black; font-family: Agency FB; font-style: italics; font-weight: 700px; font-size: 30px; margin-top: 200px;">Password :</td>
+    <td><input type="password"></td>
+   </tr>
+   <tr>
+    <td style="text-align:center; color:black; font-family: Agency FB; font-style: italics; font-weight: 700px; font-size: 30px; margin-top: 200px;">Gender :</td>
+    <td>
+     <input type="radio" name="Gender"> Male
+     <input type="radio" name="Gender"> Female
+    </td>
+   </tr>
+   <tr>
+    <td style="text-align:center; color:black; font-family: Agency FB; font-style: italics; font-weight: 700px; font-size: 30px; margin-top: 200px;">Email :</td>
+    <td><input type="email"></td>
+   </tr>
+   <tr>
+    <td style="text-align:center; color:black; font-family: Agency FB; font-style: italics; font-weight: 700px; font-size: 30px; margin-top: 200px;">Phone no :</td>
+    <td>
+     <select>
+      <option>977</option>
+      <option>978</option>
+      <option>979</option>
+      <option>973</option>
+      <option>972</option>
+      <option>974</option>
+     </select>	
+     <input type="phone">
+    </td>
+   </tr>
+    
+   <tr>
+    <td ><input style="color:black; border-radius:40px; height: 50px; width: 300px; font-size: 20px; font-style: italic; font-weight: 700; border-color: blue; background-color: yellow; margin-left: 400px; margin-top: 200px;"type="submit" value="Submit"></td>
+   </tr>
+  </table>
+ </form>
+
+ <a href="{% url 'new_photo' %}">
+    <button style="color:black; border-radius:30px; height: 50px; width: 90px; font-size: 20px; font-style: italic; font-weight: 700; border-color: blue; background-color: white; margin-left: 500px;">Click Photo</button>
+      </a>
+
+</body>
+</html>

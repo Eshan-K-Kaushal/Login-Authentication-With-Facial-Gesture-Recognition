@@ -1,3 +1,14 @@
+Sorry for mess!
+registration_main.html is login page
+loginconc.html is registration
+projfile.html is home page
+face_rec.py is for nor face smile eye detection/ recognition
+faces_train.py trains the dataset
+rest is done
+
+
+
+
 # Login-Authentication-With-Facial-Gesture-Recognition
 Just a basic implemented framework of the idea. More can be done in future implmentation
 

@@ -1,9 +1,9 @@
-Sorry for mess!
-registration_main.html is login page
-loginconc.html is registration
-projfile.html is home page
-face_rec.py is for nor face smile eye detection/ recognition
-faces_train.py trains the dataset
+Sorry for mess!-----
+registration_main.html is login page----
+loginconc.html is registration-----
+projfile.html is home page-----
+face_rec.py is for nor face smile eye detection/ recognition-----
+faces_train.py trains the dataset-----
 rest is done
 
 
